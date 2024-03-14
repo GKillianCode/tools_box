@@ -30,11 +30,11 @@ sudo apt-get upgrade
 usr=$(whoami)
 
 mkdir -p ~/.ssh
-
+rm ~/.my-aliases.sh
 cp ${BASEDIR}/provisioning/my-aliases.sh ~/.my-aliases.sh
-if ! grep -q "my-aliases.sh" ~/.zshrc
+if ! grep -q "my-aliases.sh" ~/.bashrc
 then
-  echo "source ~/.my-aliases.sh"  >> ~/.zshrc
+  echo "source ~/.my-aliases.sh"  >> ~/.bashrc
 fi
 
 echo " - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
@@ -80,6 +80,14 @@ sudo apt install python3 python3-venv python3-pip
 echo "${GREEN}--- Vuejs3 tools ${WHITE}"
 npm install @vue/cli-service
 
-echo "-----------------------------------------------------------------------------"
-echo "${GREEN}INSTALLATION AND CONFIGURATION IS FINISH${WHITE}"
-echo "-----------------------------------------------------------------------------"
+echo "${GREEN}"
+echo "+ ----------------------------------------------------------------------------- +"
+echo "| ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ |"
+echo "+ ----------------------------------------------------------------------------- +"
+echo "${WHITE}"
+echo "---              INSTALLATION AND CONFIGURATION ARE FINISHED                  ---"
+echo "${GREEN}"
+echo "+ ----------------------------------------------------------------------------- +"
+echo "| ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ |"
+echo "+ ----------------------------------------------------------------------------- +"
+echo "${WHITE}"
