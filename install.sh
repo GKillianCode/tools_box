@@ -61,7 +61,10 @@ echo " - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 echo "${BLUE}##### Applications and tools install #####${WHITE}"
 sudo apt install wget
 
-echo "${GREEN}--- Add Google ${WHITE}"
+echo "${GREEN}--- Add GIT ${WHITE}"
+sudo apt install git-all
+
+echo "${GREEN}--- Add Google chrome ${WHITE}"
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 sudo apt-get install -f
@@ -79,7 +82,7 @@ sudo snap install dbeaver-ce
 echo "${GREEN}--- Add Intellij ${WHITE}"
 sudo snap install intellij-idea-community --classic
 
-echo "${GREEN}--- Add tools ${WHITE}"
+echo "${GREEN}--- Add JQ ${WHITE}"
 sudo snap install jq
 sudo snap refresh
 

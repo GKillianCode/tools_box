@@ -1,6 +1,6 @@
 #export PS1="👉 $PS1"
 
-VERSION='1.2.0'
+VERSION='1.3.0'
 
 # generated from https://manytools.org/hacker-tools/ascii-banner/
 echo "--------------------------------------------------------------------------------------------"
