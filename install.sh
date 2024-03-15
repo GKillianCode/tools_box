@@ -33,6 +33,7 @@ mkdir -p ~/.ssh
 rm ~/.my-aliases.sh
 cp ${BASEDIR}/provisioning/my-aliases.sh ~/.my-aliases.sh
 if ! grep -q "my-aliases.sh" ~/.bashrc; then
+        cat ${BASEDIR}/provisioning/git-config.sh >>~/.bashrc
         echo "source ~/.my-aliases.sh" >>~/.bashrc
 fi
 

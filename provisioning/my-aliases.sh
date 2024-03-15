@@ -1,4 +1,4 @@
-export PS1="👉 $PS1"
+#export PS1="👉 $PS1"
 
 VERSION='1.1.0'
 
