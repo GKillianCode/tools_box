@@ -1,0 +1,28 @@
+"set number      " Affiche les numéros de ligne
+set smartindent " Indentation intelligente
+set autoindent  " Conserve l indentation sur une nouvelle ligne
+"set ruler       " Affiche la position du curseur
+
+"set mouse=a    " Utilisation de la souris
+
+syntax on       " Coloration syntaxique
+
+set relativenumber      "Affichage relatif des numéros de ligne (http://jeffkreeftmeijer.com/2012/relative-line-numbers-in-vim-for-super-fast-movement/)
+
+set hlsearch   "pour que les résultats de recherche soient en surbrillance
+set incsearch  "recherche incrémentale
+
+"reglages copies de la cheat sheet "vim for programmers"
+set nocompatible ruler laststatus=2 showcmd showmode number
+set incsearch ignorecase smartcase hlsearch
+
+"plugin ctrlp.vim et autres
+"https://vimawesome.com/plugin/ctrlp-vim-everything-has-changed
+set runtimepath^=~/.vim/bundle/ctrlp.vim,~/.vim/pack/dist/start/vim-airline,~/.vim/bundle/vim-airline-themes
+
+" Config vim-airline https://vimawesome.com/plugin/vim-airline
+"ligne d'onglets en haut de l'écran
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = '|'
+let g:airline#extensions#tabline#left_alt_sep = '|'
+"let g:airline_powerline_fonts = 1
